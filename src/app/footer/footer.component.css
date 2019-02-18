@@ -1,0 +1,8 @@
+#signup {
+    padding: 5rem 0;
+    background: url(../../assets/images/news_letter_background_image_home@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

@@ -1,0 +1,15 @@
+.btn-red {
+    background-image: url(assets/images/btn_2_normal@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 258px;
+    height: 52px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.color-red {
+    color: red;
+}

@@ -1,0 +1,28 @@
+.carousel-indicators li {
+    width: 10px!important;
+    height: 10px!important;
+    background-image: url(../../assets/images/slider_dot_normal@1x.png);
+    border-radius: 100%;
+    transition: all 0.25s ease;
+}
+
+.carousel-indicators .active,
+.hover {
+    width: 10px!important;
+    height: 10px!important;
+    background-image: url(../../assets/images/slider_dot_pressed@2x.png);
+    border-radius: 100%;
+}
+
+.carousel-block {
+    padding: 100px 0 100px 0;
+}
+
+@media screen and (max-width:700px) {
+    .carousel-block {
+        padding: 40px 0 40px 0;
+    }
+    .carousel-item {
+        height: 380px;
+    }
+}
