@@ -1,15 +1,24 @@
-import { Injectable } from  '@angular/core';
-import { Http} from  '@angular/http';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 
 @Injectable({
 providedIn:  'root'
 })
 
-export  class  ConsoApiService {
-  
-  constructor(private  httpModule:  Http) {}
-  getData(){
-      return  this.httpModule.get(`https://api.myglamapp.pl/api/categories?language=EN`);
 
-}}
+export  class  ConsoApiService {
+  configUrl=`https://cors.io/?https://api.myglamapp.pl/api/categories?language=EN`;
+  
+  constructor(private  http:  HttpClient) {}
+  
+
+
+getConfig() {
+  
+  return this.http.get(this.configUrl);
+}
+
+
+}

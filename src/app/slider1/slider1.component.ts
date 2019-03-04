@@ -10,12 +10,11 @@ import { ConsoApiService } from '../conso-api.service';
   
 })
 export class Slider1Component implements OnInit {
-  private  datas;
-  constructor(private  test : ConsoApiService) { }
+  public datas;
+  constructor(private  test : ConsoApiService ) { }
   ngOnInit() {
-    this.test.getData().subscribe(res => {
-      this.datas  = res.json().data;
-     console.log(this.datas);
+    this.test.getConfig().subscribe((data: any) => {
+      this.datas=data.data; 
       
   });
   }

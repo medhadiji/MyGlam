@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpModule } from  '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { ConsoApiService} from  './conso-api.service';
+import { Config } from 'protractor';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,18 +10,12 @@ import { ConsoApiService} from  './conso-api.service';
 
   export  class  AppComponent implements  OnInit {
     title = 'app';
-    private  datas;
+   
     constructor(private  ConsoApiService:  ConsoApiService) { }
     ngOnInit() {
-        this.getData();
+        
     }
-    public  getData(){
-        this.ConsoApiService.getData().subscribe(res => {
-            this.datas  = res.json().data;
-           
-            
-        });
-    }
+ 
     }
 
   

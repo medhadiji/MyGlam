@@ -71,4 +71,5 @@
 
 .card {
     border: none;
+    min-height: 450px;
 }
